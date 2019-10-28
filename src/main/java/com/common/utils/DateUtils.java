@@ -16,27 +16,27 @@ import java.util.Date;
  **/
 public class DateUtils {
 
-    public static LocalDateTime date2LocalDateTime(Date date) {
+    public static final LocalDateTime date2LocalDateTime(Date date) {
         return date.toInstant().atZone(ZoneId.of("Z")).toLocalDateTime();
     }
 
-    public static Date localDateTime2Date(LocalDateTime localDateTime) {
+    public static final Date localDateTime2Date(LocalDateTime localDateTime) {
         return Timestamp.valueOf(localDateTime);
     }
 
-    public static OffsetDateTime date2OffsetDateTime(Date date) {
+    public static final OffsetDateTime date2OffsetDateTime(Date date) {
         return date.toInstant().atZone(ZoneId.of("Z")).toOffsetDateTime();
     }
 
-    public static Date offsetDateTime2Date(OffsetDateTime offsetDateTime) {
+    public static final Date offsetDateTime2Date(OffsetDateTime offsetDateTime) {
         return Timestamp.from(offsetDateTime.toInstant());
     }
 
-    public static LocalDate date2LocalDate(Date date) {
+    public static final LocalDate date2LocalDate(Date date) {
         return date.toInstant().atZone(ZoneId.of("Asia/Shanghai")).toLocalDate();
     }
 
-    public static LocalTime date2LocalTime(Date date) {
+    public static final LocalTime date2LocalTime(Date date) {
         return date.toInstant().atZone(ZoneId.of("Asia/Shanghai")).toLocalTime();
     }
 }
