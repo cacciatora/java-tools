@@ -1,3 +1,4 @@
+
 package com.common.object;
 
 import lombok.AllArgsConstructor;
@@ -11,9 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Car {
-
-    private String brand;
-    private Integer mile;
-    private Chair chair;
+public class Chair {
+    private String color;
+    private Integer count;
 }

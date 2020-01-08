@@ -1,9 +1,3 @@
-/*
- * Copyright (C) GSX Techedu Inc. All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
- */
-
 package com.common.utils;
 
 import com.google.gson.Gson;
@@ -13,10 +7,8 @@ import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
 
 /**
- * @author zoujie
- * @description $Description
- * @team wuhan operational dev.
- * @date 2019/12/9 4:23 PM
+ * @author Jerax
+ * @date 2019/10/28 5:00 PM
  **/
 public class ProtobufUtils {
     private static final Gson gson = new Gson();
